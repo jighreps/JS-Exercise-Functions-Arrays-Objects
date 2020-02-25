@@ -12,10 +12,10 @@
  *
  * NOTE: This example has been completed for you.
  */
-function addNumbers(num1, num2) {
-  return num1 + num2;
+function addNumbers (num1, num2) {
+  return num1 + num2
 }
-console.log(addNumbers(1, 2));
+console.log(addNumbers(1, 2))
 
 // ⭐️ Example Challenge end ⭐️
 
@@ -39,14 +39,14 @@ console.log(addNumbers(1, 2));
  *   email: "leia@leia.com",
  * }
  */
-function makePersonObject(id, name, email) {
+function makePersonObject (id, name, email) {
   /* code here */
   const myObj = {
     id: id,
     name: name,
     email: email
-  };
-  return myObj;
+  }
+  return myObj
   // return {id:id, name:name, email:email};
 }
 
@@ -64,11 +64,11 @@ function makePersonObject(id, name, email) {
  * the returned value should look like `Hello, my name is Leia`.
  */
 
-function getName(aName /* code here */) {
+function getName (aName /* code here */) {
   /* code here */
-  return `Hello, my name is ${aName.name}`;
+  return `Hello, my name is ${aName.name}`
 }
-console.log(getName({ id: 1, name: "Leia", email: "leia@leia.com" }));
+console.log(getName({ id: 1, name: 'Leia', email: 'leia@leia.com' }))
 
 /**
  * ### Challenge `makeSmartPerson`
@@ -83,44 +83,44 @@ console.log(getName({ id: 1, name: "Leia", email: "leia@leia.com" }));
  *         and returns a string like `Hello, my name is {name}`.
  *         where `{name}` is the name passed into `makeSmartPerson`.
  */
-function makeSmartPerson(name /* code here */) {
+function makeSmartPerson (name /* code here */) {
   /* code here */
   return {
     name: name,
-    sum: function(num1, num2) {
-      return num1 + num2;
+    sum: function (num1, num2) {
+      return num1 + num2
     },
-    speak: function() {
-      return `Hello, my name is ${name}`;
+    speak: function () {
+      return `Hello, my name is ${name}`
     }
-  };
+  }
 }
-console.log(makeSmartPerson("human").speak());
+console.log(makeSmartPerson('human').speak())
 
 // ⭐️ Example Test Data ⭐️
 
 var inventory = [
-  { id: 1, car_make: "Lincoln", car_model: "Navigator", car_year: 2009 },
-  { id: 2, car_make: "Mazda", car_model: "Miata MX-5", car_year: 2001 },
+  { id: 1, car_make: 'Lincoln', car_model: 'Navigator', car_year: 2009 },
+  { id: 2, car_make: 'Mazda', car_model: 'Miata MX-5', car_year: 2001 },
   {
     id: 3,
-    car_make: "Land Rover",
-    car_model: "Defender Ice Edition",
+    car_make: 'Land Rover',
+    car_model: 'Defender Ice Edition',
     car_year: 2010
   },
-  { id: 4, car_make: "Honda", car_model: "Accord", car_year: 1983 },
-  { id: 5, car_make: "Mitsubishi", car_model: "Galant", car_year: 1990 },
-  { id: 6, car_make: "Honda", car_model: "Accord", car_year: 1995 },
-  { id: 7, car_make: "Smart", car_model: "Fortwo", car_year: 2009 },
-  { id: 8, car_make: "Audi", car_model: "4000CS Quattro", car_year: 1987 },
-  { id: 9, car_make: "Ford", car_model: "Windstar", car_year: 1996 },
-  { id: 10, car_make: "Mercedes-Benz", car_model: "E-Class", car_year: 2000 },
-  { id: 11, car_make: "Infiniti", car_model: "G35", car_year: 2004 },
-  { id: 12, car_make: "Lotus", car_model: "Esprit", car_year: 2004 },
-  { id: 13, car_make: "Chevrolet", car_model: "Cavalier", car_year: 1997 },
-  { id: 14, car_make: "Dodge", car_model: "Ram Van 1500", car_year: 1999 }
+  { id: 4, car_make: 'Honda', car_model: 'Accord', car_year: 1983 },
+  { id: 5, car_make: 'Mitsubishi', car_model: 'Galant', car_year: 1990 },
+  { id: 6, car_make: 'Honda', car_model: 'Accord', car_year: 1995 },
+  { id: 7, car_make: 'Smart', car_model: 'Fortwo', car_year: 2009 },
+  { id: 8, car_make: 'Audi', car_model: '4000CS Quattro', car_year: 1987 },
+  { id: 9, car_make: 'Ford', car_model: 'Windstar', car_year: 1996 },
+  { id: 10, car_make: 'Mercedes-Benz', car_model: 'E-Class', car_year: 2000 },
+  { id: 11, car_make: 'Infiniti', car_model: 'G35', car_year: 2004 },
+  { id: 12, car_make: 'Lotus', car_model: 'Esprit', car_year: 2004 },
+  { id: 13, car_make: 'Chevrolet', car_model: 'Cavalier', car_year: 1997 },
+  { id: 14, car_make: 'Dodge', car_model: 'Ram Van 1500', car_year: 1999 }
   /// ... Truncated
-];
+]
 
 /**
  * ### Example Array Challenge:
@@ -131,11 +131,11 @@ var inventory = [
  *
  * NOTE: This example has been completed for you.
  **/
-function get3rdCar(inventory) {
+function get3rdCar (inventory) {
   const the3rd = inventory.find((item, index) => {
-    return index === 2; // we use 2 because index is zero-based.
-  });
-  return `The car is a ${the3rd.car_make} ${the3rd.car_model}`;
+    return index === 2 // we use 2 because index is zero-based.
+  })
+  return `The car is a ${the3rd.car_make} ${the3rd.car_model}`
 }
 
 // 👇 COMPLETE YOUR WORK BELOW 👇
@@ -154,10 +154,10 @@ function get3rdCar(inventory) {
  * For example, if getCarInfoByIndex is invoked with the inventory and the number 0,
  * it will return `This is a Lincoln Navigator`.
  */
-function getCarInfoByIndex(inventory, index) {
-  return `This is a ${inventory[index].car_make} ${inventory[index].car_model}`;
+function getCarInfoByIndex (inventory, index) {
+  return `This is a ${inventory[index].car_make} ${inventory[index].car_model}`
 }
-console.log(getCarInfoByIndex(inventory, 0));
+console.log(getCarInfoByIndex(inventory, 0))
 
 /**
  * ### Challenge `getLastCarInfo`
@@ -170,15 +170,15 @@ console.log(getCarInfoByIndex(inventory, 0));
  * For example, if getLastCarInfo is invoked passing the inventory inside /data/inventory.js,
  * it will return `This is a Lincoln Town Car`.
  */
-function getLastCarInfo(inventory /* code here */) {
+function getLastCarInfo (inventory /* code here */) {
   /* code here */
   for (let i = 0; i < inventory.length; i++) {
     return `This is a ${inventory[inventory.length - 1].car_make} ${
       inventory[inventory.length - 1].car_model
-    }`;
+    }`
   }
 }
-console.log(getLastCarInfo(inventory));
+console.log(getLastCarInfo(inventory))
 /**
  * ### Challenge `getCarInfoById`
  *
@@ -191,14 +191,14 @@ console.log(getLastCarInfo(inventory));
  * For example, if getCarInfoById is invoked with the inventory and the number 1,
  * it will return `This is a Lincoln Navigator`.
  */
-function getCarInfoById(arr, num) {
+function getCarInfoById (arr, num) {
   for (let i = 0; i < arr.length; i++) {
     if (arr[i].id == num) {
-      return `This is a ${arr[i].car_make} ${arr[i].car_model}`;
+      return `This is a ${arr[i].car_make} ${arr[i].car_model}`
     }
   }
 }
-console.log(getCarInfoByIndex(inventory, 5));
+console.log(getCarInfoByIndex(inventory, 5))
 /**
  * ### Challenge `sortCarInventory`
  *
@@ -207,8 +207,8 @@ console.log(getCarInfoByIndex(inventory, 5));
  *     (1) an array which is an inventory of cars like the one inside /data/inventory.js.
  * sortCarInventory returns an inventory that is sorted by car_model, ascending [A-Z].
  */
-function sortCarInventory(inventory) {
-  return inventory.sort((a, b) => (a.car_model > b.car_model ? 1 : -1));
+function sortCarInventory (inventory) {
+  return inventory.sort((a, b) => (a.car_model > b.car_model ? 1 : -1))
 }
 // console.log(sortCarInventory(inventory));
 
@@ -221,12 +221,12 @@ function sortCarInventory(inventory) {
  *     (1) an array which is an inventory of cars like the one inside /data/inventory.js.
  * getModelYears returns an array containing all the 'car_year's in the inventory.
  */
-function getModelYears(array) {
-  let newArray = [];
+function getModelYears (array) {
+  let newArray = []
   for (let i = 0; i < array.length; i++) {
-    newArray.push(array[i].car_year);
+    newArray.push(array[i].car_year)
   }
-  return newArray;
+  return newArray
 }
 
 /**
@@ -241,13 +241,13 @@ function getModelYears(array) {
  * with a `car_year` which is at most the given desired max year,
  * in the same order as they appear in the original inventory.
  */
-function getOlderCars(arr, num) {
-  let newArray = [];
+function getOlderCars (arr, num) {
+  let newArray = []
   for (let i = 0; i < arr.length; i++) {
     if (arr[i].car_year <= num) {
       newArray.push(arr[i]);
     }
-    return newArray;
+    return newArray
   }
 }
 
@@ -262,18 +262,18 @@ function getOlderCars(arr, num) {
  * made by either `Audi` or `Mercedes-Benz` or `Volkswagen` or `BMW`,
  * in the same order as they appear in the original inventory.
  */
-function getGermanCars(arr) {
-  let newArray = [];
+function getGermanCars (arr) {
+  let newArray = []
   for (let i = 0; i < arr.length; i++)
     if (
-      arr[i].car_make == "Audi" ||
-      arr[i].car_make == "Mercedes-Benz" ||
-      arr[i].car_make == "Volkswagen" ||
-      arr[i].car_make == "BMW"
+      arr[i].car_make == 'Audi' ||
+      arr[i].car_make == 'Mercedes-Benz' ||
+      arr[i].car_make == 'Volkswagen' ||
+      arr[i].car_make == 'BMW'
     ) {
-      newArray.push(arr[i]);
+      newArray.push(arr[i])
     }
-  return newArray;
+  return newArray
 }
 
 /**
@@ -294,9 +294,9 @@ function getGermanCars(arr) {
  *   return num * 2
  * }
  */
-const sum = null; // code here!
-const addFive = null; // code here!
-const argTimesTwo = null; // code here!
+const sum = (a, b) => a + b
+const addFive = num => num + 5
+const argTimesTwo = num => num * 2 // code here!
 
 /**
  * ### Challenge `carMaker`
@@ -311,60 +311,60 @@ const argTimesTwo = null; // code here!
  *         (1) causes the odometer in the object to be increased by the distance,
  *         (2) returns the updated value of the `odometer`.
  */
-function carMaker(/* code here */) {
+function carMaker (/* code here */) {
   /* code here */
 }
 
 /// ////// END OF CHALLENGE /////////
 /// ////// END OF CHALLENGE /////////
 /// ////// END OF CHALLENGE /////////
-if (typeof exports !== "undefined") {
+if (typeof exports !== 'undefined') {
   // IGNORE: Test/Env Detected
   // For Node/Non-browser test env
-  module.exports = module.exports || {};
+  module.exports = module.exports || {}
   if (addNumbers) {
-    module.exports.addNumbers = addNumbers;
+    module.exports.addNumbers = addNumbers
   }
   if (makePersonObject) {
-    module.exports.makePersonObject = makePersonObject;
+    module.exports.makePersonObject = makePersonObject
   }
   if (getName) {
-    module.exports.getName = getName;
+    module.exports.getName = getName
   }
   if (makeSmartPerson) {
-    module.exports.makeSmartPerson = makeSmartPerson;
+    module.exports.makeSmartPerson = makeSmartPerson
   }
   if (carMaker) {
-    module.exports.carMaker = carMaker;
+    module.exports.carMaker = carMaker
   }
   if (getCarInfoByIndex) {
-    module.exports.getCarInfoByIndex = getCarInfoByIndex;
+    module.exports.getCarInfoByIndex = getCarInfoByIndex
   }
   if (getLastCarInfo) {
-    module.exports.getLastCarInfo = getLastCarInfo;
+    module.exports.getLastCarInfo = getLastCarInfo
   }
   if (getCarInfoById) {
-    module.exports.getCarInfoById = getCarInfoById;
+    module.exports.getCarInfoById = getCarInfoById
   }
   if (sortCarInventory) {
-    module.exports.sortCarInventory = sortCarInventory;
+    module.exports.sortCarInventory = sortCarInventory
   }
   if (getModelYears) {
-    module.exports.getModelYears = getModelYears;
+    module.exports.getModelYears = getModelYears
   }
   if (getOlderCars) {
-    module.exports.getOlderCars = getOlderCars;
+    module.exports.getOlderCars = getOlderCars
   }
   if (getGermanCars) {
-    module.exports.getGermanCars = getGermanCars;
+    module.exports.getGermanCars = getGermanCars
   }
   if (sum) {
-    module.exports.sum = sum;
+    module.exports.sum = sum
   }
   if (addFive) {
-    module.exports.addFive = addFive;
+    module.exports.addFive = addFive
   }
   if (argTimesTwo) {
-    module.exports.argTimesTwo = argTimesTwo;
+    module.exports.argTimesTwo = argTimesTwo
   }
 }
